@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import ProviderComponent from './providerComponent';
 import * as serviceWorker from './serviceWorker';
 

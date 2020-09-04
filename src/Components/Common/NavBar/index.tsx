@@ -7,6 +7,16 @@ const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
   },
+  title: {
+    textAlign: 'center',
+    fontSize: '20px',
+    background: '#ffffff',
+    color: '#3f51b5',
+    padding: '10px',
+  },
+  button: {
+    marginRight: '3px',
+  },
 }));
 const NavBar: React.FC<{}> = () => {
   const history = useHistory();
@@ -15,14 +25,25 @@ const NavBar: React.FC<{}> = () => {
   return (
     <div className={classes.root}>
       <AppBar position='static'>
+        <div className={classes.title}>
+          <span>Welcome to school management application </span>
+        </div>
         <Toolbar>
-          <Button color='inherit' onClick={() => navigateTopage('/')}>
+          <Button color='inherit' className={classes.button} onClick={() => navigateTopage('/')}>
             Home
           </Button>
-
+          <Button color='inherit'  className={classes.button} onClick={() => navigateTopage('/')}>
+            About
+          </Button>
+          <Button color='inherit'  className={classes.button} onClick={() => navigateTopage('/')}>
+            features
+          </Button>
           <Grid container alignItems='flex-start' justify='flex-end' direction='row'>
             <Button color='inherit' onClick={() => navigateTopage('/login')}>
               Login
+            </Button>
+            <Button color='inherit' onClick={() => navigateTopage('/login')}>
+              Signup
             </Button>
           </Grid>
         </Toolbar>

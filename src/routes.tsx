@@ -1,8 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Home from './Components/home/home';
-import Login from './Components/login/login';
+import Home from './Components/Home/home';
+import Login from './Components/Authentication/Login/login';
+import Dashboard from './Components/Dashboard/dashboard';
 import NavBar from './Components/Common/NavBar/index';
+import ForgotPassword from './Components/Authentication/ForgotPassword/forgotpassword';
 
 const routes = (
   <>
@@ -10,6 +12,8 @@ const routes = (
     <div>
       <Route name='root' exact={true} path='/' component={Home} />
       <Route name='login' exact={true} path='/login' component={Login} />
+      <Route name='login' exact={true} path='/dashboard' component={Dashboard} />
+      <Route name='forgotpassword' exact={true} path='/forgot' component={ForgotPassword} />
     </div>
   </>
 );

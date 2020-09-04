@@ -1,7 +1,7 @@
 module.exports = {
   extends: ['@cleartax', 'plugin:prettier/recommended'],
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'react', 'jsx-a11y', 'import', 'module-resolver'],
+  // parser: '@typescript-eslint/parser',
+  // plugins: ['@typescript-eslint', 'react', 'jsx-a11y', 'import', 'module-resolver'],
 
   overrides: [
     {

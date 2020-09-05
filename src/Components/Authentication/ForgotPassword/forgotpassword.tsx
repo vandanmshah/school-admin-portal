@@ -1,5 +1,4 @@
 import React from 'react';
-// import './home.css';
 
 const ForgotPassword: React.FC<{}> = () => {
   return (

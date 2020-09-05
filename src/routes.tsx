@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Home from './Components/Home/home';
-import Login from './Components/Authentication/Login/login';
-import Dashboard from './Components/Dashboard/dashboard';
-import NavBar from './Components/Common/NavBar/index';
-import ForgotPassword from './Components/Authentication/ForgotPassword/forgotpassword';
+import Dashboard from '@Components/Dashboard/dashboard';
+import Home from '@Components/home/home';
+import Login from '@Components/Authentication/Login/login';
+import NavBar from '@Components/Common/NavBar/index';
+import ForgotPassword from '@Components/Authentication/ForgotPassword/forgotpassword';
 
 const routes = (
   <>

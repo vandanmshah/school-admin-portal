@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core';
 
-export const useForm = (initialValues: any) => {
+export const useForm = (initialValues: { [key: string]: string | boolean | number }) => {
   console.log('IN USERFORM FUNCTION', initialValues);
   const [values, setValues] = useState(initialValues);
 
   // use to update state onchange of email and password
-  const handleInputChange = (e: any) => {
+  const handleInputChange = (e: React.BaseSyntheticEvent) => {
     const { name, value } = e.target;
     setValues({
       ...values,
@@ -41,4 +41,3 @@ export const Form = (props: any) => {
 
   return <form className={classes.root}>{props.children}</form>;
 };
-

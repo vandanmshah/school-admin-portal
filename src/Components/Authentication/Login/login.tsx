@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Grid, TextField, makeStyles, Button, Typography, Paper, Box, Link } from '@material-ui/core';
 import axios from 'axios';
-import avatar from '../../../Assets/lifeline.jpg';
-import './login.css';
-import { API_URL } from '../../../config/dev/env';
-// import Button from "@material-ui/core/Button";
-import { useForm, Form } from '../../Common/useForm';
 
-const useStyle = makeStyles(theme => ({
+// Components
+import { Grid, TextField, makeStyles, Button, Typography, Box, Link } from '@material-ui/core';
+import { env } from '@config';
+import { useForm, Form } from '@src/Components/Common/useForm';
+
+// constants
+import avatar from '@src/Assets/lifeline.jpg';
+
+import './login.css';
+
+const useStyle = makeStyles(() => ({
   submit: {
     // marginTop: theme.spacing(3),
     'backgroundColor': '#211b4e !important',
@@ -44,22 +48,18 @@ const initialValues = {
 const Login: React.FC<{}> = () => {
   const history = useHistory();
 
-  const { values, setValues, handleInputChange } = useForm(initialValues);
-
-  console.log('IN LOGIN FUNCTION', values);
+  const { values, handleInputChange } = useForm(initialValues);
   const classes = useStyle();
 
   // use for API call on submit
   const handleSubmit = () => {
-    console.log('submit', values);
     // API call
-    const url = `${API_URL}signin`;
+    const url = `${env.API_URL}signin`;
 
     axios
       .post(url, values)
-      .then(res => {
-        console.log(res.data, 'eeeeeee');
-        history.push('/dashboard');
+      .then(() => {
+        return history.push('/dashboard');
       })
       .catch(err => console.log(err));
   };

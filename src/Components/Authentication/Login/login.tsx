@@ -4,11 +4,11 @@ import axios from 'axios';
 
 // Components
 import { Grid, TextField, makeStyles, Button, Typography, Box, Link } from '@material-ui/core';
-import { env } from '@config';
-import { useForm, Form } from '@src/Components/Common/useForm';
+import avatar from '../../../Assets/lifeline.jpg';
+import { useForm, Form } from '../../Common/useForm';
 
 // constants
-import avatar from '@src/Assets/lifeline.jpg';
+import { env } from '../../../config';
 
 import './login.css';
 

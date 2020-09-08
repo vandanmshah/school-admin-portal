@@ -1,13 +1,11 @@
 module.exports = {
-  extends: ['@cleartax', 'plugin:prettier/recommended'],
-  // parser: '@typescript-eslint/parser',
-  // plugins: ['@typescript-eslint', 'react', 'jsx-a11y', 'import', 'module-resolver'],
-
+  extends: ['@cleartax'],
   overrides: [
     {
       files: ['**/*.test.{ts,tsx}'],
       rules: {
         'promise/catch-or-return': 'off',
+        // https://github.com/jest-community/eslint-plugin-jest/blob/ff25588/docs/rules/expect-expect.md#assertfunctionnames
         'jest/expect-expect': ['error', { assertFunctionNames: ['expect', 'request.*.expect'] }],
       },
     },

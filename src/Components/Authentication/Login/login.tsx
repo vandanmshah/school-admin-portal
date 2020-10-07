@@ -4,7 +4,7 @@ import axios from 'axios';
 
 // Components
 import { Grid, TextField, makeStyles, Button, Typography, Box, Link } from '@material-ui/core';
-import avatar from '../../../Assets/lifeline.jpg';
+// import avatar from '../../../Assets/jinu.jpg';
 import { useForm, Form } from '../../Common/useForm';
 
 // constants
@@ -92,33 +92,14 @@ const Login: React.FC<{}> = () => {
             />
           </Grid>
         </Form>
-        <Button
-          className={classes.submit}
-          color='primary'
-          // className={classes.addButton}
-          // style={'margin:'}
-          type='submit'
-          variant='contained'
-          onClick={handleSubmit}
-        >
+        <Button className={classes.submit} color='primary' type='submit' variant='contained' onClick={handleSubmit}>
           Submit
         </Button>
-        <Link
-          className={classes.link}
-          href='/forgot'
-          // onClick={() => {
-          //   this.setState({ showForgetPass: true });
-          // }}
-          // className={classes.forgetPassword}
-        >
+        <Link className={classes.link} href='/forgot'>
           Forgot Password?
         </Link>
       </Box>
-      {/* <Box m={10}> */}
-      {/* <Grid> */}
       <img className={classes.sideImg} src={avatar} alt='' />
-      {/* </Box> */}
-      {/* </Grid> */}
     </>
   );
 };

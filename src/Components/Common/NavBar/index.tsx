@@ -25,9 +25,7 @@ const NavBar: React.FC<{}> = () => {
   return (
     <div className={classes.root}>
       <AppBar position='static'>
-        <div className={classes.title}>
-          <span>Welcome to school management application </span>
-        </div>
+        <span>Welcome to school management application </span>
         <Toolbar>
           <Button color='inherit' className={classes.button} onClick={() => navigateTopage('/')}>
             Home

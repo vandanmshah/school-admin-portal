@@ -14,7 +14,8 @@ import './login.css';
 
 const useStyle = makeStyles(() => ({
   loginData: {
-    margin: '10%',
+    margin: '10% 0% 0% 5%',
+    width:'45%'
   },
   submit: {
     // marginTop: theme.spacing(3),
@@ -38,7 +39,7 @@ const useStyle = makeStyles(() => ({
     width: '100%',
     // height: "657px",
     height: '90vh',
-    marginLeft: '10%',
+    marginTop: '3.5px',
     backgroundSize: 'cover',
     backgroundPosition: '50%',
   },

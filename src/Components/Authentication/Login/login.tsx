@@ -15,10 +15,9 @@ import './login.css';
 const useStyle = makeStyles(() => ({
   loginData: {
     margin: '10% 0% 0% 5%',
-    width:'45%'
+    width: '45%',
   },
   submit: {
-    // marginTop: theme.spacing(3),
     'backgroundColor': '#211b4e !important',
     '&:hover': {
       backgroundColor: '#151039 !important',
@@ -37,14 +36,12 @@ const useStyle = makeStyles(() => ({
   login: {
     backgroundImage: `url(${avatar})`,
     width: '100%',
-    // height: "657px",
     height: '90vh',
     marginTop: '3.5px',
     backgroundSize: 'cover',
     backgroundPosition: '50%',
   },
   sideImg: {
-    // bottom: '360px',
     top: '-360px',
     left: '50%',
     width: '50%',
@@ -80,7 +77,6 @@ const Login: React.FC<{}> = () => {
   return (
     <>
       <Grid container spacing={1}>
-        {/* <Box m={10}> */}
         <Grid className={classes.loginData}>
           <span>
             <Typography component='h5' variant='h5'>
@@ -89,22 +85,10 @@ const Login: React.FC<{}> = () => {
           </span>
           <Form>
             <Grid>
-              <TextField
-                // variant='filled' // for diff varient like outline etc
-                label='Email'
-                name='email'
-                value={values.email}
-                onChange={handleInputChange}
-              />
+              <TextField label='Email' name='email' value={values.email} onChange={handleInputChange} />
             </Grid>
             <Grid>
-              <TextField
-                // variant='outlined' // for diff varient like outline etc
-                label='Password'
-                name='password'
-                value={values.password}
-                onChange={handleInputChange}
-              />
+              <TextField label='Password' name='password' value={values.password} onChange={handleInputChange} />
             </Grid>
           </Form>
           <Button className={classes.submit} color='primary' type='submit' variant='contained' onClick={handleSubmit}>
@@ -117,10 +101,6 @@ const Login: React.FC<{}> = () => {
         <Grid container sm={6} md={6} direction='column'>
           <div className={classes.login} />
         </Grid>
-
-        {/* <img className={classes.sideImg} src={avatar} alt='' /> */}
-
-        {/* </Box> */}
       </Grid>
     </>
   );

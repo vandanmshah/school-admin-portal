@@ -5,6 +5,8 @@ import Home from './Components/Home/home';
 import Login from './Components/Authentication/Login/login';
 import NavBar from './Components/Common/NavBar/index';
 import ForgotPassword from './Components/Authentication/ForgotPassword/forgotpassword';
+import SignUp from './Components/Authentication/SignUp/signup';
+
 
 const routes = (
   <>
@@ -14,6 +16,7 @@ const routes = (
       <Route name='login' exact={true} path='/login' component={Login} />
       <Route name='login' exact={true} path='/dashboard' component={Dashboard} />
       <Route name='forgotpassword' exact={true} path='/forgot' component={ForgotPassword} />
+      <Route name='signup' exact={true} path='/signup' component={SignUp} />
     </div>
   </>
 );

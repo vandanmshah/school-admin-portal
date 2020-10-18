@@ -40,7 +40,7 @@ const NavBar: React.FC<{}> = () => {
             <Button color='inherit' onClick={() => navigateTopage('/login')}>
               Login
             </Button>
-            <Button color='inherit' onClick={() => navigateTopage('/login')}>
+            <Button color='inherit' onClick={() => navigateTopage('/signup')}>
               Signup
             </Button>
           </Grid>

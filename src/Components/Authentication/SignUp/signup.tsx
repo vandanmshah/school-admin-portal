@@ -59,10 +59,10 @@ const SignUp: React.FC<{}> = () => {
   const { values, handleInputChange } = useForm(initialValues);
   const classes = useStyle();
 
-  // use for API call on submit
+  // use for API call on signup
   const handleSubmit = () => {
     // API call
-    const url = `${env.API_URL}signin`;
+    const url = `${env.API_URL}signup`;
 
     axios
       .post(url, values)

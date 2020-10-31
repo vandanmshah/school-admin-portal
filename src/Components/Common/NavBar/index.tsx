@@ -33,8 +33,8 @@ const NavBar: React.FC<{}> = () => {
           <Button color='inherit' className={classes.button} onClick={() => navigateTopage('/about')}>
             About
           </Button>
-          <Button color='inherit' className={classes.button} onClick={() => navigateTopage('/')}>
-            features
+          <Button color='inherit' className={classes.button} onClick={() => navigateTopage('/features')}>
+            Features
           </Button>
           <Grid container alignItems='flex-start' justify='flex-end' direction='row'>
             <Button color='inherit' onClick={() => navigateTopage('/login')}>

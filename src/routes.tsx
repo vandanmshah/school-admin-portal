@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Dashboard from './Components/Dashboard/dashboard';
 import About from './Components/About/about';
+import Features from './Components/Features/features';
 import Home from './Components/home/home';
 import Login from './Components/Authentication/Login/login';
 import NavBar from './Components/Common/NavBar/index';
@@ -18,6 +19,7 @@ const routes = (
       <Route name='forgotpassword' exact={true} path='/forgot' component={ForgotPassword} />
       <Route name='signup' exact={true} path='/signup' component={SignUp} />
       <Route name='about' exact={true} path='/about' component={About} />
+      <Route name='features' exact={true} path='/features' component={Features} />
     </div>
   </>
 );

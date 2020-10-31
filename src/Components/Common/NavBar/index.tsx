@@ -30,7 +30,7 @@ const NavBar: React.FC<{}> = () => {
           <Button color='inherit' className={classes.button} onClick={() => navigateTopage('/')}>
             Home
           </Button>
-          <Button color='inherit' className={classes.button} onClick={() => navigateTopage('/')}>
+          <Button color='inherit' className={classes.button} onClick={() => navigateTopage('/about')}>
             About
           </Button>
           <Button color='inherit' className={classes.button} onClick={() => navigateTopage('/')}>

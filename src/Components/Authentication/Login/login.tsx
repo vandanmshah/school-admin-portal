@@ -71,7 +71,9 @@ const Login: React.FC<{}> = () => {
       .then(() => {
         return history.push('/dashboard');
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        throw err;
+      });
   };
 
   return (

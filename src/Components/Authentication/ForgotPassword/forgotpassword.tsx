@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 // Components
-import { Grid, TextField, makeStyles, Button, Typography, Box, Link } from '@material-ui/core';
+import { Grid, TextField, makeStyles, Button, Typography } from '@material-ui/core';
 import avatar from '../../../Assets/lifeline.jpg';
 import { useForm, Form } from '../../Common/useForm';
 
@@ -66,8 +65,11 @@ const ForgotPassword: React.FC<{}> = () => {
       .post(url, values)
       .then(() => {
         setShowSuccess(true);
+        return true;
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        throw err;
+      });
   };
 
   return (

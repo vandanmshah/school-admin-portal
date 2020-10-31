@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
 // Components
-import { Grid, TextField, makeStyles, Button, Typography, Box, Link } from '@material-ui/core';
+import { Grid, TextField, makeStyles, Button, Typography, Link } from '@material-ui/core';
 import avatar from '../../../Assets/lifeline.jpg';
 import { useForm, Form } from '../../Common/useForm';
 

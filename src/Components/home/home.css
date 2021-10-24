@@ -1,3 +1,15 @@
 body {
   margin: 0;
 }
+.main-title {
+  text-align: center;
+  margin: 40px 0px 20px;
+}
+
+.main-description {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto 20px;
+}
